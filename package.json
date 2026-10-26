@@ -1,0 +1,37 @@
+{
+  "name": "prism-vibe-guard",
+  "version": "1.0.0",
+  "description": "Zero-dependency CLI that checks your git diff for leaked API keys, console.log, elided '// ... rest of code' placeholders, .only tests, conflict markers and more.",
+  "bin": {
+    "vibeguard": "bin/vibeguard.js"
+  },
+  "main": "src/index.js",
+  "files": [
+    "bin",
+    "src"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "cli",
+    "git",
+    "pre-commit",
+    "linter",
+    "secrets",
+    "vibe-coding",
+    "ai",
+    "code-review",
+    "prism-protocol"
+  ],
+  "author": "Soumya Bhandare (krishyaa06)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishyaa06/prism-vibe-guard.git"
+  },
+  "homepage": "https://github.com/krishyaa06/prism-vibe-guard#readme",
+  "engines": {
+    "node": ">=18.17"
+  }
+}

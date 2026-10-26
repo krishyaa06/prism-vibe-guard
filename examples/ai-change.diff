@@ -1,0 +1,22 @@
+diff --git a/src/api/users.ts b/src/api/users.ts
+--- a/src/api/users.ts
++++ b/src/api/users.ts
+@@ -10,3 +10,12 @@ export async function getUser(id: string) {
++  console.log("user data", data);
++  const OPENAI_API_KEY = "sk-proj-a8F3kd92LmQwErTy7UiOp0ZxCvBn";
++  // TODO: handle errors properly
++  const user = data as any;
++  // ... rest of the implementation
++  return { name: "John Doe", email: "john.doe@example.org" };
+diff --git a/src/api/users.test.ts b/src/api/users.test.ts
+--- a/src/api/users.test.ts
++++ b/src/api/users.test.ts
+@@ -1,2 +1,4 @@
++describe.only("getUser", () => {
++  it("works", () => {});
+diff --git a/src/db.ts b/src/db.ts
+--- a/src/db.ts
++++ b/src/db.ts
+@@ -3,0 +4,2 @@
++const url = process.env.DATABASE_URL;
++export const db = connect(url);
